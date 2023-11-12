@@ -1,4 +1,4 @@
-package edu.utsa.cs3443.finalproject;
+package edu.utsa.cs3443.finalproject.Model;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

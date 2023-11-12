@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import edu.utsa.cs3443.finalproject.Model.Notes;
+
 /**
  * The main activity for the Notes application.
  */

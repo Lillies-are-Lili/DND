@@ -67,7 +67,7 @@ public class NotesActivity extends AppCompatActivity implements View.OnClickList
                 // Set text fields with selected note content
                 tile.setText(spinner.getSelectedItem().toString());
                 body.setText(notes.getText(noteNames.indexOf(spinner.getSelectedItem().toString())));
-                Toast.makeText(this, "Hurrah", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "Hurrah", Toast.LENGTH_SHORT).show();
             }
         } else if (view.getId() == R.id.Push) {
             // Handle Push button click

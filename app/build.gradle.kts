@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "edu.utsa.cs3443.finalproject"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "edu.utsa.cs3443.finalproject"

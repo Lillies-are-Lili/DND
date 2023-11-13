@@ -53,7 +53,7 @@
         android:padding="5dp"
         android:textSize="20sp"
         android:textColor="#DF0000"
-        android:text="Name Generator" />
+        android:text="Name/Background Generator" />
 
     <Space
         android:layout_width="match_parent"
@@ -71,8 +71,9 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:textSize="20sp"
+        android:gravity="center"
         android:textColor="#DF0000"
-        android:text="Dice Roller" />
+        android:text="Dice Roller&#xA;Name/Background Generator" />
 
     <Space
         android:layout_width="match_parent"
@@ -89,8 +90,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
+        android:gravity="center"
         android:textSize="20sp"
         android:textColor="#DF0000"
-        android:text="Notes" />
+        android:text="Notes&#xA;Credits" />
 
 </LinearLayout>

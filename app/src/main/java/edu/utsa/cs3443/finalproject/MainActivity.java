@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent3);
         }
         else if (view.getId() == R.id.credits) {
-//            Intent intent4 = new Intent(this, CreditActivity.class);
-//            startActivity(intent4);
+            Intent intent4 = new Intent(this, CreditActivity.class);
+            startActivity(intent4);
         }
         else if (view.getId() == R.id.exit) {
             finish();

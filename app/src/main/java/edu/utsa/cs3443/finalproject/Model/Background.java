@@ -19,7 +19,7 @@ public class Background {
         AssetManager asset = context.getAssets();
 
         try {
-            InputStream is = asset.open("background.csv");
+            InputStream is = asset.open("Background.csv");
             Scanner scan = new Scanner(is);
             Random rand = new Random();
 

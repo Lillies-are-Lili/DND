@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class Notes {
     private String note;
     private Activity activity;
-    private File[] listOfFiles;
+    private File[] listOfFiles ;
 
     /**
      * Constructor for the Notes class.
@@ -45,8 +45,10 @@ public class Notes {
      */
     public ArrayList<String> getnames() {
         ArrayList<String> str = new ArrayList<>();
-        for(File file : listOfFiles){
-            str.add(file.getName());
+        if(listOfFiles != null){
+            for(File file : listOfFiles){
+                str.add(file.getName());
+            }
         }
         return str;
     }

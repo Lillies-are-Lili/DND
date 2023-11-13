@@ -14,7 +14,6 @@
         android:id="@+id/jobGeneration"
         android:layout_width="300dp"
         android:layout_height="125dp"
-
         android:backgroundTint="@color/cardview_dark_background"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"

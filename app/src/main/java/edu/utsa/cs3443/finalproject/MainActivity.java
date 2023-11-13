@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             launchNameActivity();
 
         } else if (view.getId() == R.id.dice_roll) {
-//            Intent intent2 = new Intent(this, DiceActivity.class);
-//            startActivity(intent2);
+            Intent intent2 = new Intent(this, DiceActivity.class);
+            startActivity(intent2);
         }
         else if (view.getId() == R.id.notes) {
             Intent intent3 = new Intent(this, NotesActivity.class);

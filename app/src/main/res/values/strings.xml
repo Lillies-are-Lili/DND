@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">finalproject</string>
+    <string-array name="raceGeneration">
+        <item>Human</item>
+        <item>Elf</item>
+        <item>Dwarf</item>
+    </string-array>
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".NameActivity"
     android:layout_gravity="center"
     android:orientation="vertical"
     >
@@ -14,12 +14,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Switch
-            android:id="@+id/switch1"
+        <Button
+            android:id="@+id/jobGeneration"
             android:layout_width="418dp"
-            android:layout_height="96dp"
+            android:layout_height="125dp"
             android:layout_weight="1"
-            android:text="Would you like to generate a Job?" />
+            android:text="Generate Job!" />
     </LinearLayout>
 
     <LinearLayout
@@ -27,12 +27,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Switch
-            android:id="@+id/switch2"
+        <Button
+            android:id="@+id/backGenerate"
             android:layout_width="416dp"
-            android:layout_height="96dp"
+            android:layout_height="125dp"
             android:layout_weight="1"
-            android:text="Would you like to generate a Background?" />
+            android:text="Generate Background!" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,24 +42,27 @@
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="410dp"
-            android:layout_height="100dp">
+            android:layout_height="125dp"
+            >
 
         </Spinner>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="119dp"
-        android:text="userInput here">
-    </TextView>
-
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/generate"
+        android:layout_width="410dp"
+        android:layout_height="125dp"
+        android:text="Generate character name!">
 
     </Button>
+
+    <TextView
+        android:id="@+id/finalText"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        >
+    </TextView>
 
 
 
 </LinearLayout>
-

@@ -20,15 +20,37 @@ public class CharacterName {
     public CharacterName(String finalString) {
         this.finalString = finalString;
     }
+
+    public void loadList(Context context) throws IOException {
+        try {
+        AssetManager asset = context.getAssets();
+
+        InputStream is = asset.open("firstname.csv");
+        InputStream is2 = asset.open("lastname.csv");
+        Scanner scan = new Scanner(is);
+        Scanner scan2 = new Scanner(is2);
+
+        while (scan.hasNextLine()) {
+            first.add(scan.nextLine());
+        }
+        while (scan2.hasNextLine()) {
+            last.add(scan2.nextLine());
+        }
+    } catch(IOException e) {
+        System.out.println("EEEE");
+    } catch(NullPointerException a) {
+            System.out.println("Null Pointer Issue");
+        }
+    }
     public void loadCharacter(Context context) throws IOException {
 
-        try {
-            AssetManager asset = context.getAssets();
-
-            InputStream is = asset.open("firstname.csv");
-            InputStream is2 = asset.open("lastname.csv");
-            Scanner scan = new Scanner(is);
-            Scanner scan2 = new Scanner(is2);
+ //       try {
+//            AssetManager asset = context.getAssets();
+//
+//            InputStream is = asset.open("firstname.csv");
+//            InputStream is2 = asset.open("lastname.csv");
+//            Scanner scan = new Scanner(is);
+//            Scanner scan2 = new Scanner(is2);
             //int randFinal, randFinal2;
             //Random rand = new Random();
 
@@ -36,14 +58,14 @@ public class CharacterName {
             //randFinal2 = rand.nextInt(100);
             //int randFinal = new Random().nextInt(100);
             //int randFinal2 = new Random().nextInt(100);
-            Toast.makeText(context, "yay", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "yay", Toast.LENGTH_SHORT).show();
 
-            while (scan.hasNextLine()) {
-                first.add(scan.nextLine());
-            }
-            while (scan2.hasNextLine()) {
-                last.add(scan2.nextLine());
-            }
+//            while (scan.hasNextLine()) {
+//                first.add(scan.nextLine());
+//            }
+//            while (scan2.hasNextLine()) {
+//                last.add(scan2.nextLine());
+//            }
             Random gen = new Random();
             int ran1 = gen.nextInt(first.size()-1);
             int ran2 = gen.nextInt(last.size()-1);
@@ -51,11 +73,11 @@ public class CharacterName {
             String lastName = last.get(ran2);
 
             finalString = firstName + " " + lastName;
-            first.clear();
-            last.clear();
-        } catch(IOException e) {
-            System.out.println("EEEE");
-        }
+//            first.clear();
+//            last.clear();
+//        } catch(IOException e) {
+//            System.out.println("EEEE");
+//        }
     }
 
     public String getName() {

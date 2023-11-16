@@ -34,6 +34,13 @@ public class NameActivity extends AppCompatActivity implements View.OnClickListe
         setupButton(R.id.jobGeneration);
         setupButton(R.id.backGenerate);
         setupButton(R.id.generate);
+        try {
+            cn.loadList(this);
+        } catch(IOException e) {
+            System.out.println("Failed to load files");
+        } catch(NullPointerException a) {
+            System.out.println("Null issue");
+        }
 
 
     }

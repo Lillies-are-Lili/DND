@@ -31,4 +31,7 @@ public class Dice {
         this.currentRoll = 0;
         this.weights = 0;
     }
+    public String toString() {
+        return "Roll: " + currentRoll + "\nWeights: " + weights;
+    }
 }

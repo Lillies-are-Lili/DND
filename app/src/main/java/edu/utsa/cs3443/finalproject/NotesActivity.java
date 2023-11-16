@@ -57,6 +57,8 @@ public class NotesActivity extends AppCompatActivity implements View.OnClickList
         setupButton(R.id.Push);
         setupButton(R.id.Pull);
         setupButton(R.id.Destroy);
+
+
     }
 
     @Override

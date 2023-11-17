@@ -6,6 +6,7 @@
         <item>Dwarf</item>
     </string-array>
     <string-array name="dice_array">
+        <item>Select Dice</item>
         <item>D3</item>
         <item>D4</item>
         <item>D6</item>
@@ -15,6 +16,7 @@
         <item>D20</item>
     </string-array>
     <string-array name="level_array">
+        <item>Select Level</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -37,8 +39,8 @@
         <item>20</item>
     </string-array>
     <string-array name="advantage_array">
+        <item>Neutral Advantage</item>
         <item>Advantage</item>
         <item>Disadvantage</item>
-        <item>None</item>
     </string-array>
 </resources>

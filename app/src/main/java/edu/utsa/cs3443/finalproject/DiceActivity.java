@@ -13,6 +13,7 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import edu.utsa.cs3443.finalproject.Model.Dice;
 
@@ -71,7 +72,7 @@ public class DiceActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(diceSelect() != 0) {
-                    if (proficiencyToggle.isChecked() && !"Select Level".equals(levelDropDownSpinner.getSelectedItem().toString())) {
+                    if ((proficiencyToggle.isChecked() && !"Select Level".equals(levelDropDownSpinner.getSelectedItem().toString())) || !proficiencyToggle.isChecked()) {
                         args = argBuilder();
                         String temp;
                         if (advantageSpinner.getSelectedItem().toString() == "Advantage") {
@@ -93,7 +94,7 @@ public class DiceActivity extends AppCompatActivity {
                         } else {
                             temp = Integer.toString(choice.roll(args, diceSelect()));
                         }
-                        resultDisplay.setText(temp);
+                        resultDisplay.setText("Result: " + temp);
                         addRoll(Integer.valueOf(temp));
                         choice.reset();
                         args.clear();
@@ -123,25 +124,36 @@ public class DiceActivity extends AppCompatActivity {
             System.out.println("History Control ArrayList Null exception");
         }
     }
+
     private void updateTable() {
         tableLayout.removeAllViews();
         for (int i = 0; i < history.size(); i++) {
             TableRow row = new TableRow(this);
-            row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT));
+            TableRow.LayoutParams rowParams = new TableRow.LayoutParams(
+                    TableRow.LayoutParams.MATCH_PARENT,
+                    TableRow.LayoutParams.WRAP_CONTENT);
+            row.setLayoutParams(rowParams);
 
             TextView textView = new TextView(this);
-            textView.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT));
+            TableRow.LayoutParams textParams = new TableRow.LayoutParams(
+                    TableRow.LayoutParams.WRAP_CONTENT,
+                    TableRow.LayoutParams.WRAP_CONTENT, 1.0f);
+            textView.setLayoutParams(textParams);
             textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
             textView.setText(String.valueOf(history.get(i)));
-            textView.setTextColor(getResources().getColor(R.color.white));
-            textView.setPadding(5, 5, 5, 5);
+
+            textView.setTextColor(ContextCompat.getColor(this, R.color.white));
+
             textView.setGravity(Gravity.CENTER);
-            textView.setTextSize(20);
+            textView.setTextSize(23);
 
             row.addView(textView);
             tableLayout.addView(row);
         }
     }
+
+
+
 
 
     private void addRoll(int roll) {

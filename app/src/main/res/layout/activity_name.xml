@@ -36,8 +36,8 @@
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_gravity="center"
-        android:background="@color/lightgrey"
-        >
+        android:spinnerMode="dropdown"
+        android:background="@color/lightgrey">
 
     </Spinner>
 
@@ -60,6 +60,10 @@
         android:layout_gravity="center"
         android:background="@drawable/background_border2"
         android:gravity="center"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeMaxTextSize="40sp"
+        app:autoSizeStepGranularity="2sp"
         android:textColor="#FF0000"></TextView>
 
 

@@ -4,6 +4,35 @@
         <item>Human</item>
         <item>Elf</item>
         <item>Dwarf</item>
+        <item>Dragonborn</item>
+        <item>Gnome</item>
+        <item>Half-Elf</item>
+        <item>Halfling</item>
+        <item>Half-Orc</item>
+        <item>Tiefling</item>
+        <item>Aarakocra</item>
+        <item>Aasimar</item>
+        <item>Air Genasi</item>
+        <item>Bugbear</item>
+        <item>Centaur</item>
+        <item>Changeling</item>
+        <item>Deep Gnome</item>
+        <item>Fairy</item>
+        <item>Fire Genasi</item>
+        <item>Goblin</item>
+        <item>Goliath</item>
+        <item>Hobgoblin</item>
+        <item>Kenku</item>
+        <item>Lizardfolk</item>
+        <item>Minotaur</item>
+        <item>Orc</item>
+        <item>Sea Elf</item>
+        <item>Shifter</item>
+        <item>Tortle</item>
+        <item>Triton</item>
+        <item>Kender</item>
+        <item>Astral Elf</item>
+        <item>Owlin</item>
     </string-array>
     <string-array name="dice_array">
         <item>Select Dice</item>

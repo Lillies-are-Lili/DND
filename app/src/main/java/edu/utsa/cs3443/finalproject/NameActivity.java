@@ -59,8 +59,6 @@ public class NameActivity extends AppCompatActivity implements View.OnClickListe
             cn.loadList(this);
         } catch(IOException e) {
             System.out.println("Failed to load files");
-        } catch(NullPointerException a) {
-            System.out.println("Null issue");
         }
 
 
@@ -89,8 +87,6 @@ public class NameActivity extends AppCompatActivity implements View.OnClickListe
                 back.loadBackground(this);
             } catch (IOException e) {
                 throw new RuntimeException(e);
-            } catch (NullPointerException n) {
-                System.out.println("Failed.\n");
             }
             text.setText(getBack());
         }
@@ -99,8 +95,6 @@ public class NameActivity extends AppCompatActivity implements View.OnClickListe
                 job.loadJobs(this);
             } catch (IOException e) {
                 throw new RuntimeException(e);
-            } catch (NullPointerException n) {
-                System.out.println("Failed.\n");
             }
             text.setText(getJob());
         }

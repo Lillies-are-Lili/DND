@@ -12,7 +12,7 @@ import java.util.ArrayList;
 /**
  * The Notes class manages the creation, loading, and manipulation of notes.
  * It provides methods to load, retrieve, create, update, and delete notes.
- * he notes are stored in the internal files directory of the associated activity.
+ * The notes are stored in the internal files directory of the associated activity.
  * Each note is represented as a file in the "notes" directory.
  *
  * @author Mackenzie Tully

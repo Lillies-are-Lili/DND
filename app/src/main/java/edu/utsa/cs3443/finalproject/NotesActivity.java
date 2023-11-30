@@ -16,6 +16,12 @@ import edu.utsa.cs3443.finalproject.Model.Notes;
 
 /**
  * The main activity for the Notes application.
+ * Allows users to manage notes, including creating, viewing, updating, and deleting notes.
+ * This activity provides a user interface with text fields for note title and body, a spinner for selecting existing notes,
+ * and buttons for actions such as creating a new note, viewing/editing a selected note, and deleting a selected note.
+ * Uses the Notes class to manage the creation, loading, and manipulation of notes.
+ *
+ * @author Mackenzie Tully
  */
 
 
@@ -31,6 +37,11 @@ public class NotesActivity extends AppCompatActivity implements View.OnClickList
     // List to store note names
     ArrayList<String> noteNames;
 
+    /**
+     * Overrides the onCreate method to initialize the NotesActivity.
+     *
+     * @param savedInstanceState A Bundle containing the activity's previously saved state, or null if not available.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +72,12 @@ public class NotesActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
+    /**
+     * Overrides the onClick method to handle button clicks.
+     * Performs actions based on the clicked button.
+     *
+     * @param view The view that was clicked.
+     */
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.Pull) {

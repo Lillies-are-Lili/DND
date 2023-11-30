@@ -1,11 +1,11 @@
 package edu.utsa.cs3443.finalproject;
 /**
- * @author Lillian ngohuynh
- * @author
- * @author
- * @author
- * This is the MainActivity for the DND name generator. This is the group project for group #10 for CS 3443.
- * All of the activities will start from this MainActivity.
+ * The MainActivity class serves as the main entry point for the DND name generator application.
+ * It provides buttons to navigate to different activities such as name generation, dice rolling, notes, credits, and exit.
+ * All activities start from this MainActivity.
+ * This is the group project for Team 10 in CS 3443 Section 003.
+ *
+ * @author Lillian Ngohuynh
  */
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,25 +14,29 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
+    // Buttons for various activities
+    Button nameGen;
+    Button diceRoll;
+    Button notes;
+    Button credits;
+    Button exit;
     /**
-     * Had to include View.OnClickListener interface to override onClick method
-     * @param savedInstanceState
+     * Overrides the onCreate method to initialize the main activity.
+     *
+     * @param savedInstanceState A Bundle containing the activity's previously saved state, or null if not available.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-/**
- * Initialized type Button with their id
- */
-        Button nameGen = findViewById(R.id.name_gen);
-        Button diceRoll = findViewById(R.id.dice_roll);
-        Button notes = findViewById(R.id.notes);
-        Button credits = findViewById(R.id.credits);
-        Button exit = findViewById(R.id.exit);
-/**
- * Ensured that it meant this button and not its parent class
- */
+
+        // Initialize buttons with their corresponding IDs
+         nameGen = findViewById(R.id.name_gen);
+         diceRoll = findViewById(R.id.dice_roll);
+         notes = findViewById(R.id.notes);
+         credits = findViewById(R.id.credits);
+         exit = findViewById(R.id.exit);
 
         nameGen.setOnClickListener(this);
         diceRoll.setOnClickListener(this);
@@ -42,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * Starting intents for each Activity
+     * Launches the NameActivity when the corresponding button is clicked.
      */
     private void launchNameActivity(){
         Intent intent = new Intent(this, NameActivity.class);
@@ -50,10 +54,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * Override onClick method and wrote in, that depending on where the user
-     * clicks, which button they click, to start that activity. And if they click the exit view
-     * to exit the program.
-     * @param view
+     * Overrides the onClick method to handle button clicks.
+     * Starts the corresponding activity based on the clicked button.
+     *
+     * @param view The view that was clicked.
      */
     @Override
     public void onClick(View view) {

@@ -18,6 +18,14 @@ import androidx.core.content.ContextCompat;
 import edu.utsa.cs3443.finalproject.Model.Dice;
 
 import java.util.ArrayList;
+/**
+ * The DiceActivity class represents the activity for rolling dice and displaying the results.
+ * It allows users to select a type of dice, adjust the proficiency level, and roll with advantage or disadvantage.
+ * The activity includes UI components such as spinners, toggle buttons, and buttons for user interaction.
+ * It also displays the roll history in a table layout.
+ *
+ * @author Alfonso Lopez Aquino
+ */
 
 public class DiceActivity extends AppCompatActivity {
 
@@ -35,7 +43,13 @@ public class DiceActivity extends AppCompatActivity {
     private ArrayList<Integer> args = new ArrayList<>();
     private final Dice choice = new Dice();
 
-
+    /**
+     * Called when the activity is first created.
+     * This method sets the content view to the layout specified in "activity_dice.xml" during activity creation.
+     * It initializes UI components, sets up event listeners, and configures spinners with appropriate adapters.
+     *
+     * @param savedInstanceState A Bundle containing the activity's previously saved state, or null if not available.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -124,7 +138,9 @@ public class DiceActivity extends AppCompatActivity {
             System.out.println("History Control ArrayList Null exception");
         }
     }
-
+    /**
+     * Updates the table layout with the latest roll history.
+     */
     private void updateTable() {
         tableLayout.removeAllViews();
         for (int i = 0; i < history.size(); i++) {
@@ -152,15 +168,20 @@ public class DiceActivity extends AppCompatActivity {
         }
     }
 
-
-
-
-
+    /**
+     * Adds a new roll to the history and updates the table layout.
+     *
+     * @param roll The roll value to be added to the history.
+     */
     private void addRoll(int roll) {
         historyControl(roll); // Your method to control history size
         updateTable(); // Update table with new history
     }
-
+    /**
+     * Converts the selected dice string to its corresponding integer value.
+     *
+     * @return The integer value representing the selected dice.
+     */
     private int diceSelect() {
         String select = diceSelectSpinner.getSelectedItem().toString();
         int toReturn = 0;

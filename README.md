@@ -8,10 +8,9 @@ Embark on a journey into a world of endless possibilities with DND Name Generato
 
 For example, we have added CSV files detailing the various characteristics to our assets folder, and have methods that read in the files and randomly generate a characteristic for your character.
 
-   /**
-     * This method generates a background for your character
+     /**
+     This method generates a background for your character
      */
-     
 public void loadBackground(Context context) throws IOException {
         AssetManager asset = context.getAssets();
         // Open the background file from the assets folder
@@ -32,6 +31,7 @@ public void loadBackground(Context context) throws IOException {
             System.out.println("Failed background IO");
         }
     }
+    
 
 ## Motivation
 
@@ -53,7 +53,7 @@ Depending on the size of the project, if it is small and simple enough the refer
      * This method takes in the two randomly selected last name, and first name, and concatenates them togeter.
      * While in the Name view, there is a spinner that allows the user to pick the race they desire. Whatever race they pick, will populate with the name generated. 
      
-     
+   '''  
 public void onClick(View view) {
         text.setText("");
         //boolean arguments here for the switches
@@ -83,7 +83,7 @@ public void onClick(View view) {
             text.setText(getJob());
         }
     }
-
+'''
  
      * Similar to the method in the Code Example at the top of the README, this method scans in the jobs from the provided CSV files, and randomly picks one to be printed to the 
      * screen when the user clicks the appropriate button in the Name view. 

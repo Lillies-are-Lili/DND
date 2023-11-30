@@ -52,7 +52,7 @@ public class CharacterName {
         }
             // Handle IO exception
     } catch(IOException e) {
-        System.out.println("EEEE");
+        System.out.println("Failed Character name IO.");
     }
     }
     /**

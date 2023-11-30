@@ -100,5 +100,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.867"></TableLayout>
 
+    <EditText
+        android:id="@+id/modNum"
+        android:hint="Custom Modifier"
+        android:layout_width="137dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="79dp"
+        android:background="@color/lightgrey"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Roll"
+        app:layout_constraintEnd_toStartOf="@+id/Advantage_Spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Level_DropDown" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

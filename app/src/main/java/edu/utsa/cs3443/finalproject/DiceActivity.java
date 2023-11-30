@@ -1,10 +1,12 @@
 package edu.utsa.cs3443.finalproject;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -35,6 +37,7 @@ public class DiceActivity extends AppCompatActivity {
     private Spinner advantageSpinner;
     private Button rollButton;
     private TextView resultDisplay;
+    private EditText modNum;
     //private Button backButton;
     private ArrayList<Integer> history = new ArrayList<>();
 
@@ -63,6 +66,7 @@ public class DiceActivity extends AppCompatActivity {
         rollButton = findViewById(R.id.Roll);
         resultDisplay = findViewById(R.id.Result_Display);
         tableLayout = findViewById(R.id.roll_table);
+        modNum = findViewById(R.id.modNum);
 
         // Set up Spinners
         ArrayAdapter<CharSequence> diceAdapter = ArrayAdapter.createFromResource(this,
@@ -213,9 +217,19 @@ public class DiceActivity extends AppCompatActivity {
         }
         return toReturn;
     }
-
+    /**
+     * Builds a list of argument modifiers to add/subtract from the diceroll
+     *
+     * @return ArrayList of modifiers for dice.
+     */
     private ArrayList<Integer> argBuilder() {
         ArrayList<Integer> toReturn = new ArrayList<>();
+        if(modNum.getText().length() != 0) {
+            Integer modifier = Integer.parseInt(modNum.getText().toString());
+            Log.e("cust Modifier in argBuilder", modifier.toString());
+            toReturn.add(modifier);
+        }
+
         if (proficiencyToggle.isChecked()) {
             int temp = Integer.valueOf(levelDropDownSpinner.getSelectedItem().toString());
             if (temp < 5) {

@@ -42,7 +42,7 @@ public class Dice {
     public int roll(ArrayList<Integer> args, int sides) {
         currentRoll = nudeRoll(sides);
 
-        for (int x : args) {
+        for (Integer x : args) {
             currentRoll += x;
         }
         return currentRoll;

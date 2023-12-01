@@ -45,7 +45,7 @@ A Dungeons & Dragons name generator is an essential tool for Dungeon Masters and
 
 ## Installation
 
-Please ensure you have Android Studio downloaded onto your local computer.
+Please ensure you have Android Studio downloaded onto your local computer, and that you have internet access to download the necessary code.
 To gain access to the code, all one needs to do is visit this link provided here: https://github.com/UTSA-CS-3443/DND . Then, you can click the green "<>code"<img width="98" alt="Screen Shot 2023-11-30 at 8 40 54 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/d7f54589-e291-4c9d-afa7-2bb5a3f75c6d">
  button and click "Download ZIP" to begin the download of the application onto your local computer. Then you can open the application on Android Studio, and click the Device Manager button on the top right.<img width="31" alt="Screen Shot 2023-11-30 at 8 37 24 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/006dab1a-df16-406b-9870-f2bea440ad06">
  Click the large "Create Device" button,<img width="399" alt="Screen Shot 2023-11-30 at 8 39 07 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/988d5a5b-2b49-45de-b079-a21b75c5ecbb">
@@ -298,7 +298,13 @@ Clicking this button exits the application.
 
 ## Contributors
 
-The DND Name Generator will be open for improvement after Dec 1st, 2023. Started off as a group project among four aspiring software developers, will soon have the availability to be an open source project among anyone who wishes to work on it. 
+Main Contributors: 
+* Lillian Ngohuynh
+* Mackenzie Tully
+* Alfonso Lopez Aquino
+* Minato Allen
+
+The DND Name Generator will be open for improvement after Dec 1st, 2023. Started off as a group project among four aspiring software developers from UTSA, this application will soon have the availability to be an open source project among anyone who wishes to work on it. 
 We will have all of our updates for the project on this Github repository, which is linked here: https://github.com/UTSA-CS-3443/DND . 
 
 ## License

@@ -58,17 +58,17 @@ To gain access to the code, all one needs to do is visit this link provided here
 
 When the application loads you are set on the welcome screen. From here, you may choose what you want to do with the application. From generating a random character, to picking the proficiency and advantage levels that you may possess. To go back from a view back to the main page, you can just click the back button on the Android Virtual Device.
 
-####Click "Generate Name" to reach the Name View
-####Click "Dice Roll" to reach the Dice View
-####Click "Notes" to reach the Notes View
-####Click "Credits" to reach the Credit View
-####Click "Exit" to exit the application
+#### Click "Generate Name" to reach the Name View
+#### Click "Dice Roll" to reach the Dice View
+#### Click "Notes" to reach the Notes View
+#### Click "Credits" to reach the Credit View
+#### Click "Exit" to exit the application
 
 
 ### Name View
 <img width="203" alt="Screen Shot 2023-11-30 at 8 43 40 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/f1de4304-5b80-43dc-ae52-8d5d18753633">
 
-####Click "Generate Name" to reach the Name View
+#### Click "Generate Name" to reach the Name View
 
 1. **Click "Generate Job!"**
    - Will generate a random job in the TextView.
@@ -84,7 +84,8 @@ When the application loads you are set on the welcome screen. From here, you may
    -Will generate a random first and last name in the TextView, and populate the selected race of the character.
    
 
-### Dice View
+### Dice View ![image](https://github.com/Lillies-are-Lili/finalproject/assets/102399575/2046277e-cbef-4efa-b6ca-50d118d12e04)
+
 1. **Select Dice Type:**
    - Find the "Dice Type" spinner at the top of the screen.
    - Tap the spinner to display a dropdown menu.

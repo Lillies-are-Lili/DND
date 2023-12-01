@@ -259,7 +259,7 @@ Clicking this button exits the application.
     }
 
 
-*This method goes through each of the buttons on the Notes view. If the user clicks pull, and pull is empty, it returns a toast that there are no files saved. If there are files that are saved, then to return the contents of the note. If the user clicks push, then the method will save the title and body of the note into an ArrayAdapter object. If the user clicks SMITE, then the method will delete the specified note. 
+* This method goes through each of the buttons on the Notes view. If the user clicks pull, and pull is empty, it returns a toast that there are no files saved. If there are files that are saved, then to return the contents of the note. If the user clicks push, then the method will save the title and body of the note into an ArrayAdapter object. If the user clicks SMITE, then the method will delete the specified note. 
 
          public void onClick(View view) {
         if (view.getId() == R.id.Pull) {

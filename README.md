@@ -49,27 +49,27 @@ To gain access to the code, all one needs to do is visit this link provided here
 
 When the application loads you are set on the welcome screen. From here, you may choose what you want to do with the application. From generating a random character, to picking the proficiency and advantage levels that you may possess. To go back from a view back to the main page, you can just click the back button on the Android Virtual Device.
 
-# Name View
+### Name View
 If you click on "Generate Name", it will take you to our Name View, in which you will be presented with three more buttons, a spinner (also known as a drop-down menu) and a TextView box that will print your randomly generated items. If you click "Generate Job!", a random job from our CSV file, containing more than 120 different jobs in the world of DND, will populate in the TextView box. If the job you were given is not to your liking, you can click the button again for another randomly generated job! The button right below is the "Generate Background!" button. Similar to the job button, clicking this button will populate a random background from our CSV files, and print on the TextView. The spinner below, when clicked, will present the user with a variety of different races that are present in DND. From elves to goliaths, you can choose whichever race you want your character to be! Then next button is the "Generate Character Name!" button. This will generate a random first name, and a random last name and concatenate them together. The race you chose from the spinner, will also populate with your given name. 
 
-# Dice View
+### Dice View
 If you click the "Dice Roll" button, this will take you to the Dice View. From here, you are presented with three spinners, a toggle button, an EditText, a button, a TextView and a TableLayout. The first spinner called "Select Dice" at the very top, is the dice spinner. You are able to select whichever sided die you want. If you do not see a certain sided die that you want, there is an EditText to the bottom left, called "Custom Modifier" which allows you to input a number for the sided die you want. There is a "PROFICIENCY" toggle to the right of the Dice spinner, and you are able to pick between a proficient or not proficient level. To the other side is the "Select Level" spinner where you can specifiy what level you want your proficiency level to be at. Then, below the proficiency toggle is the Advantage spinner. Here, you're able to select whether you want an advantage or not when it came to the dice roll. Then, after each spinner and toggle is chosen, can the user click the "roll" button. This will roll the die and give you a randomly generated roll number, with the specifications applied to the die. You are also able to see the previous rolls in the TableLayout as well. The TextView will also display the result of the roll. 
 
-# Notes View
+### Notes View
 Then we have the "Notes" button, where you're presented with three buttons, two EditTexts, a Scrollview, and a Spinner. Here is where you will type in and save your notes for your characters, your dice, anything you like, for later use. There are two EditTexts, with hints informing the user where to put their data and what it will represent. For example, the Title EditView has a hint informing the user that this will be the title of the note. Then, below that is the body of the note, which is where the user will type in the rest of their note. The "Push" button saves the note to the Spinner at the top, which is where the notes and their titles will populate. The "Smite" button deletes a note that you had saved, and you can specify which note to delete by clicking the spinner at the top. The "Pull" button will pull a note that you specified from the spinner, and print the contents of the note in the ScrollView. 
 
-# Credit View
+### Credit View
 This is a simple view with TextViews that display the authors of this application. 
 
-# Exit Button
+### Exit Button
 Clicking this button exits the application. 
 
 
 ## API Reference
 
-Java: https://docs.oracle.com/javase/8/docs/api/
-Adobe Experience Manager: https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/AssetManager.html
-Android Studio: https://developer.android.com/reference/packages
+* Java: https://docs.oracle.com/javase/8/docs/api/
+* Adobe Experience Manager: https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/AssetManager.html
+* Android Studio: https://developer.android.com/reference/packages
 
 ## Tests
 
@@ -303,6 +303,7 @@ Android Studio: https://developer.android.com/reference/packages
 
 ## Contributors
 
+The DND Name Generator will be open for improvement after Dec 1st, 2023. Started off as a group project among four aspiring software developers, will soon have the availability to be an open source project among anyone who wishes to work on it. 
 We will have all of our updates for the project on this Github repository, which is linked here: https://github.com/UTSA-CS-3443/DND . 
 
 ## License

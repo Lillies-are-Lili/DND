@@ -8,10 +8,12 @@ Embark on a journey into a world of endless possibilities with DND Name Generato
 
 For example, we have added CSV files detailing the various characteristics to our assets folder, and have methods that read in the files and randomly generate a characteristic for your character.
 
-     /**
-     This method generates a background for your character
-     */
-public void loadBackground(Context context) throws IOException {
+
+/**
+*This method generates a background for your character
+*/
+     
+     public void loadBackground(Context context) throws IOException {
         AssetManager asset = context.getAssets();
         // Open the background file from the assets folder
         try {
@@ -40,7 +42,27 @@ A Dungeons & Dragons name generator is an essential tool for Dungeon Masters and
 ## Installation
 
 Please ensure you have Android Studio downloaded onto your local computer.
-To gain access to the code, all one needs to do is visit this link provided here: https://github.com/UTSA-CS-3443/DND . Then, you can click the green "<>code" button and click "Download ZIP" to begin the download of the application onto your local computer. Then you can open the application on Android Studio, and click the Device Manager button on the top right. Click the large "Create Device" button, and choose a device to have the application on. For the system image, you must pick the Oreo release name, with an API level of 26. This ensures the application will work on the device. Click "Next", and then click "Finish". This will create an Android Virtual Device, and then you are able to run the application on this AVD. On the top right, to the left of the Device Manager button, is the "sync Project with Gradle Files" button. Please click the button and allow the IDE a few minutes to sync the project. Once the sync is complete, can you run the application! Click the green arrow in the middle to run the application. All the required data and documentation are already within the project, therefore no other downloads are required to begin this application. And there you have it! A working character generator with backgrounds, jobs, races, different-sided die, level and advantage drop-downs, notes, and proficiency toggles.
+To gain access to the code, all one needs to do is visit this link provided here: https://github.com/UTSA-CS-3443/DND . Then, you can click the green "<>code" button and click "Download ZIP" to begin the download of the application onto your local computer. Then you can open the application on Android Studio, and click the Device Manager button on the top right. Click the large "Create Device" button, and choose a device to have the application on. For the system image, you must pick the Oreo release name, with an API level of 26. This ensures the application will work on the device. Click "Next", and then click "Finish". This will create an Android Virtual Device, and then you are able to run the application on this AVD. On the top right, to the left of the Device Manager button, is the "sync Project with Gradle Files" button. Please click the button and allow the IDE a few minutes to sync the project. Once the sync is complete, can you run the application! Click the green arrow in the middle to run the application. All the required data and documentation are already within the project, therefore no other downloads are required to begin this application. And there you have it! A working character generator with backgrounds, jobs, races, different-sided die, level and advantage drop-downs, notes, and proficiency toggles. 
+
+## Instruction
+
+
+When the application loads you are set on the welcome screen. From here, you may choose what you want to do with the application. From generating a random character, to picking the proficiency and advantage levels that you may possess. To go back from a view back to the main page, you can just click the back button on the Android Virtual Device.
+
+#Name View
+If you click on "Generate Name", it will take you to our Name View, in which you will be presented with three more buttons, a spinner (also known as a drop-down menu) and a TextView box that will print your randomly generated items. If you click "Generate Job!", a random job from our CSV file, containing more than 120 different jobs in the world of DND, will populate in the TextView box. If the job you were given is not to your liking, you can click the button again for another randomly generated job! The button right below is the "Generate Background!" button. Similar to the job button, clicking this button will populate a random background from our CSV files, and print on the TextView. The spinner below, when clicked, will present the user with a variety of different races that are present in DND. From elves to goliaths, you can choose whichever race you want your character to be! Then next button is the "Generate Character Name!" button. This will generate a random first name, and a random last name and concatenate them together. The race you chose from the spinner, will also populate with your given name. 
+
+#Dice View
+If you click the "Dice Roll" button, this will take you to the Dice View. From here, you are presented with three spinners, a toggle button, an EditText, a button, a TextView and a TableLayout. The first spinner called "Select Dice" at the very top, is the dice spinner. You are able to select whichever sided die you want. If you do not see a certain sided die that you want, there is an EditText to the bottom left, called "Custom Modifier" which allows you to input a number for the sided die you want. There is a "PROFICIENCY" toggle to the right of the Dice spinner, and you are able to pick between a proficient or not proficient level. To the other side is the "Select Level" spinner where you can specifiy what level you want your proficiency level to be at. Then, below the proficiency toggle is the Advantage spinner. Here, you're able to select whether you want an advantage or not when it came to the dice roll. Then, after each spinner and toggle is chosen, can the user click the "roll" button. This will roll the die and give you a randomly generated roll number, with the specifications applied to the die. You are also able to see the previous rolls in the TableLayout as well. The TextView will also display the result of the roll. 
+
+#Notes View
+Then we have the "Notes" button, where you're presented with three buttons, two EditTexts, a Scrollview, and a Spinner. Here is where you will type in and save your notes for your characters, your dice, anything you like, for later use. There are two EditTexts, with hints informing the user where to put their data and what it will represent. For example, the Title EditView has a hint informing the user that this will be the title of the note. Then, below that is the body of the note, which is where the user will type in the rest of their note. The "Push" button saves the note to the Spinner at the top, which is where the notes and their titles will populate. The "Smite" button deletes a note that you had saved, and you can specify which note to delete by clicking the spinner at the top. The "Pull" button will pull a note that you specified from the spinner, and print the contents of the note in the ScrollView. 
+
+#Credit View
+This is a simple view with TextViews that display the authors of this application. 
+
+#Exit Button
+Clicking this button exits the application. 
 
 
 ## API Reference
@@ -49,12 +71,12 @@ Depending on the size of the project, if it is small and simple enough the refer
 
 ## Tests
 
-   
+   /**
      * This method takes in the two randomly selected last name, and first name, and concatenates them togeter.
      * While in the Name view, there is a spinner that allows the user to pick the race they desire. Whatever race they pick, will populate with the name generated. 
-     
-   '''  
-public void onClick(View view) {
+     */
+ 
+     public void onClick(View view) {
         text.setText("");
         //boolean arguments here for the switches
         //spinner.getSelectedItem().toString(); ->returns the value that the spinner is currently selected as a string
@@ -83,12 +105,13 @@ public void onClick(View view) {
             text.setText(getJob());
         }
     }
-'''
- 
+
+
+   /**
      * Similar to the method in the Code Example at the top of the README, this method scans in the jobs from the provided CSV files, and randomly picks one to be printed to the 
      * screen when the user clicks the appropriate button in the Name view. 
-     
-     
+     */
+
     public void loadJobs(Context context) throws IOException {
         AssetManager asset = context.getAssets();
         // Open the job file from the assets folder
@@ -109,11 +132,11 @@ public void onClick(View view) {
         jobselector.clear();
     }
 
-     /**
-       * This method returns the text that the user saved in the Notes view. 
-       */
+/**
+* This method returns the text that the user saved in the Notes view. 
+*/
 
-    public String getText(int indexOf) {
+         public String getText(int indexOf) {
         String str = "";
         try {
             FileReader reader = new FileReader(listOfFiles[indexOf]);
@@ -133,10 +156,11 @@ public void onClick(View view) {
         return str;
     }
 
-          /** 
-            * This method finds a file and if the file exists, updates the file to what the user wants, but if it doesn't exist, then creates the file. 
-            */
-        public void setfile(String ttl, String text) {
+  /** 
+     * This method finds a file and if the file exists, updates the file to what the user wants, but if it doesn't exist, then creates the file. 
+     */
+
+      public void setfile(String ttl, String text) {
         File temp = new File(activity.getApplicationContext().getFilesDir().toString() + "/notes/" + ttl);
         FileWriter writer = null;
         if(!temp.exists()){
@@ -160,7 +184,7 @@ public void onClick(View view) {
    * 
    */
 
-@Override
+          @Override
             public void onClick(View v) {
                 if(diceSelect() != 0) {
                     if ((proficiencyToggle.isChecked() && !"Select Level".equals(levelDropDownSpinner.getSelectedItem().toString())) || !proficiencyToggle.isChecked()) {
@@ -196,7 +220,7 @@ public void onClick(View view) {
                     Toast.makeText(DiceActivity.this, "Please select a Dice!", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+           });
     }
 
 
@@ -237,7 +261,11 @@ public void onClick(View view) {
     }
 
 
-    public void onClick(View view) {
+/**
+* This method goes through each of the buttons on the Notes view. If the user clicks pull, and pull is empty, it returns a toast that there are no files saved. If there are files * that are saved, then to return the contents of the note. If the user clicks push, then the method will save the title and body of the note into an ArrayAdapter object. If the user clicks SMITE, then the method will delete the specified note. 
+*/
+
+         public void onClick(View view) {
         if (view.getId() == R.id.Pull) {
             // Handle Pull button click
             if (noteNames.isEmpty()) {
@@ -246,7 +274,7 @@ public void onClick(View view) {
                 // Set text fields with selected note content
                 tile.setText(spinner.getSelectedItem().toString());
                 body.setText(notes.getText(noteNames.indexOf(spinner.getSelectedItem().toString())));
-//                Toast.makeText(this, "Hurrah", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Hurrah", Toast.LENGTH_SHORT).show();
             }
         } else if (view.getId() == R.id.Push) {
             // Handle Push button click

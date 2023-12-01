@@ -73,11 +73,9 @@ Clicking this button exits the application.
 
 ## Tests
 
-   /**
-     * This method takes in the two randomly selected last name, and first name, and concatenates them together. While in the Name view, there is a spinner that allows the user to pick the race they desire. Whatever race they pick, will populate with the name generated. 
-     */
+* This method takes in the two randomly selected last name, and first name, and concatenates them together. While in the Name view, there is a spinner that allows the user to pick the race they desire. Whatever race they pick, will populate with the name generated. 
  
-     public void onClick(View view) {
+       public void onClick(View view) {
         text.setText("");
         //boolean arguments here for the switches
         //spinner.getSelectedItem().toString(); ->returns the value that the spinner is currently selected as a string
@@ -105,15 +103,11 @@ Clicking this button exits the application.
             }
             text.setText(getJob());
         }
-    }
+      }
 
-
-   /**
-     * Similar to the method in the Code Example at the top of the README, this method scans in the jobs from the provided CSV files, and randomly picks one to be printed to the 
-     * screen when the user clicks the appropriate button in the Name view. 
-     */
-
-    public void loadJobs(Context context) throws IOException {
+* Similar to the method in the Code Example at the top of the README, this method scans in the jobs from the provided CSV files, and randomly picks one to be printed to the screen when the user clicks the appropriate button in the Name view. 
+  
+         public void loadJobs(Context context) throws IOException {
         AssetManager asset = context.getAssets();
         // Open the job file from the assets folder
         InputStream is = asset.open("Job.csv");
@@ -131,11 +125,9 @@ Clicking this button exits the application.
         finalJob = jobselector.get(jobModVal);
         // Clear the ArrayList to release memory
         jobselector.clear();
-    }
-
-/**
-* This method returns the text that the user saved in the Notes view. 
-*/
+      }
+  
+* This method returns the text that the user saved in the Notes view.  
 
          public String getText(int indexOf) {
         String str = "";
@@ -155,12 +147,10 @@ Clicking this button exits the application.
             throw new RuntimeException(e);
         }
         return str;
-    }
+      }
 
-  /** 
-     * This method finds a file and if the file exists, updates the file to what the user wants, but if it doesn't exist, then creates the file. 
-     */
-
+* This method finds a file and if the file exists, updates the file to what the user wants, but if it doesn't exist, then creates the file.
+  
       public void setfile(String ttl, String text) {
         File temp = new File(activity.getApplicationContext().getFilesDir().toString() + "/notes/" + ttl);
         FileWriter writer = null;
@@ -178,12 +168,10 @@ Clicking this button exits the application.
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
+      }
 
 
-/**
-*This method first checks if a dice was selected, and then if a proficiency toggle was checked. If both were, if the advantage spinner was set to advantage, if roll1 was bigger than roll2, display roll1. If disadvantage was chosen, then if roll1 is bigger then roll2, display roll2.
-*/
+* This method first checks if a dice was selected, and then if a proficiency toggle was checked. If both were, if the advantage spinner was set to advantage, if roll1 was bigger than roll2, display roll1. If disadvantage was chosen, then if roll1 is bigger then roll2, display roll2.
 
           @Override
             public void onClick(View v) {
@@ -222,14 +210,12 @@ Clicking this button exits the application.
                 }
             }
            });
-    }
+       }
 
 
- /**
-   * This method returns whichever sided die the user picked
-   * /
+* This method returns whichever sided die the user picked
 
-    private int diceSelect() {
+         private int diceSelect() {
         String select = diceSelectSpinner.getSelectedItem().toString();
         int toReturn = 0;
         switch (select) {
@@ -262,9 +248,7 @@ Clicking this button exits the application.
     }
 
 
-/**
-* This method goes through each of the buttons on the Notes view. If the user clicks pull, and pull is empty, it returns a toast that there are no files saved. If there are files that are saved, then to return the contents of the note. If the user clicks push, then the method will save the title and body of the note into an ArrayAdapter object. If the user clicks SMITE, then the method will delete the specified note. 
-*/
+*This method goes through each of the buttons on the Notes view. If the user clicks pull, and pull is empty, it returns a toast that there are no files saved. If there are files that are saved, then to return the contents of the note. If the user clicks push, then the method will save the title and body of the note into an ArrayAdapter object. If the user clicks SMITE, then the method will delete the specified note. 
 
          public void onClick(View view) {
         if (view.getId() == R.id.Pull) {

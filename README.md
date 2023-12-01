@@ -71,7 +71,7 @@ If you click the "Dice Roll" button, this will take you to the Dice View. From h
 Then we have the "Notes" button, where you're presented with three buttons, two EditTexts, a Scrollview, and a Spinner. Here is where you will type in and save your notes for your characters, your dice, anything you like, for later use. There are two EditTexts, with hints informing the user where to put their data and what it will represent. For example, the Title EditView has a hint informing the user that this will be the title of the note. Then, below that is the body of the note, which is where the user will type in the rest of their note. The "Push" button saves the note to the Spinner at the top, which is where the notes and their titles will populate. The "Smite" button deletes a note that you had saved, and you can specify which note to delete by clicking the spinner at the top. The "Pull" button will pull a note that you specified from the spinner, and print the contents of the note in the ScrollView. 
 
 ### Credit View
-<img width="204" alt="Screen Shot 2023-11-30 at 8 44 04 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/50ea1937-f33c-4c25-8a93-13d56a355420">
+<img width="228" alt="Screen Shot 2023-11-30 at 11 43 25 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/77206156-bb01-471e-8911-3c584640f668">
 This is a simple view with TextViews that display the authors of this application. 
 
 ### Exit Button

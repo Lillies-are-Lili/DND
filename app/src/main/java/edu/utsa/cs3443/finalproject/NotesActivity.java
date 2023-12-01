@@ -52,8 +52,8 @@ public class NotesActivity extends AppCompatActivity implements View.OnClickList
         tile = findViewById(R.id.Title);
 
         // Set default values for body and tile
-        body.setText("DEFAULT");
-        tile.setText("DEFAULT");
+        body.setText("");
+        tile.setText("");
 
         // Initialize Notes instance and load existing notes
         notes = new Notes(this);
@@ -99,6 +99,8 @@ public class NotesActivity extends AppCompatActivity implements View.OnClickList
             noteNames = notes.getnames();
             ArrayAdapter adapter = new ArrayAdapter(this, R.layout.custom, noteNames.toArray());
             spinner.setAdapter(adapter);
+            tile.getText().clear();
+            body.getText().clear();
         } else if (view.getId() == R.id.Destroy) {
             // Handle Destroy button click
             if (noteNames.isEmpty()) {
@@ -110,6 +112,8 @@ public class NotesActivity extends AppCompatActivity implements View.OnClickList
                 noteNames = notes.getnames();
                 ArrayAdapter adapter = new ArrayAdapter(this, R.layout.custom, noteNames.toArray());
                 spinner.setAdapter(adapter);
+                tile.getText().clear();
+                body.getText().clear();
             }
         }
     }

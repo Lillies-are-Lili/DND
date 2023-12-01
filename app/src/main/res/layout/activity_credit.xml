@@ -19,7 +19,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="25sp" />
+        android:layout_height="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,16 +29,16 @@
         android:textColor="#DF0000"
         android:text="Lillian Ngohuynh" />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:textSize="20sp"
-        android:textColor="#DF0000"
-        android:text="Main Activity and Credits" />
+        android:textSize="15sp"
+        android:textColor="@color/lightgrey"
+        android:text="Created: Main Activity, CreditActivity, activity_credit, activity_main&#xA;Assisted: Background.csv, firstname.csv, job.csv, lastname.csv, activity_name.xml, activity_notes.xml " />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="25sp" />
+        android:layout_height="5sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,16 +48,16 @@
         android:textColor="#DF0000"
         android:text="Minato Allen" />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:textSize="20sp"
-        android:textColor="#DF0000"
-        android:text="Name/Background Generator" />
+        android:textSize="15sp"
+        android:textColor="@color/lightgrey"
+        android:text="Created: Background.csv, firstname.csv, lastname.csv, job.csv, Background model, CharacterName model, Job model, NameActivity, activity_name.xml" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="25sp" />
+        android:layout_height="5sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,14 +70,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:gravity="center"
-        android:textColor="#DF0000"
-        android:text="Dice Roller&#xA;Name/Background Generator" />
+        android:textColor="@color/lightgrey"
+        android:text="Created: Dice model, DiceActivity, activity_dice.xml&#xA;Assisted: NameActivity" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="25sp" />
+        android:layout_height="5sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -91,8 +91,8 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="#DF0000"
-        android:text="Notes&#xA;Credits" />
+        android:textSize="15sp"
+        android:textColor="@color/lightgrey"
+        android:text="Created: Notes model, NotesActivity, activity_notes.xml&#xA;Assisted: activity_credit.xml, activity_main.xml" />
 
 </LinearLayout>

@@ -1,98 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
     android:background="@drawable/background_boarder"
     tools:context=".NotesActivity">
-    <EditText
-        android:id="@+id/Title"
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/background_border2"
         android:textColor="#df0000"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15sp" />
+
+    <Button
+        android:id="@+id/Destroy"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="SMITE"
+        android:textColor="#df0000"
+        android:textSize="30sp"  />
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        android:orientation="horizontal">
 
     <Button
         android:id="@+id/Push"
-        android:textColor="#df0000"
-        android:backgroundTint="@color/cardview_dark_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginEnd="40sp"
+        android:backgroundTint="@color/cardview_dark_background"
         android:text="Push"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#df0000"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/Pull"
-        android:textColor="#df0000"
-        android:backgroundTint="@color/cardview_dark_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="start"
+        android:layout_marginStart="40sp"
+        android:backgroundTint="@color/cardview_dark_background"
         android:text="Pull"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="#df0000"
+        android:textSize="30sp"  />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/Title"
+        android:layout_width="368dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:background="@drawable/background_border2"
+        android:gravity="center"
+        android:hint="Title of your note:"
+        android:textAlignment="center"
+        android:textColor="#df0000"
+        android:textColorHint="@color/grey"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15sp" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="388dp"
-        android:layout_height="503dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        android:layout_width="387dp"
+        android:layout_gravity="center"
+        android:layout_height="443dp">
 
         <EditText
             android:id="@+id/Body"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:minHeight="250dp"
             android:background="@android:color/black"
+            android:hint="Type your notes here: \n\n\n Instructions: Push will save your notes. Pull will retrieve your notes. Smite will delete your notes. You select which note you want to pull or smite via the spinner at the top."
             android:overScrollMode="always"
+            android:gravity="top|center"
             android:scrollbarStyle="insideInset"
             android:scrollbars="vertical"
             android:textColor="#df0000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5" />
+            android:textColorHint="@color/grey"
+             />
     </ScrollView>
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="409dp"
-        android:backgroundTint="@color/cardview_dark_background"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp" />
-
-    <Button
-        android:id="@+id/Destroy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="172dp"
-        android:backgroundTint="@color/cardview_dark_background"
-        android:text="SMITE"
-        android:textColor="#df0000"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

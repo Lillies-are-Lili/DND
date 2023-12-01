@@ -74,14 +74,14 @@ When the application loads you are set on the welcome screen. From here, you may
    - Will generate a random job in the TextView.
 
 2. **Click "Generate Background!"**
-   -Will generate a random background in the TextView.
+   - Will generate a random background in the TextView.
 
 3. **Select Race**
    - Tap the spinner to display a dropdown menu.
    - Choose which race you want for your character (e.g., Elf, Goliath, Human).
 
 4. **Click "Generate Character Name!"**
-   -Will generate a random first and last name in the TextView, and populate the selected race of the character.
+   - Will generate a random first and last name in the TextView, and populate the selected race of the character.
    
 
 ### Dice View ![image](https://github.com/Lillies-are-Lili/finalproject/assets/102399575/2046277e-cbef-4efa-b6ca-50d118d12e04)
@@ -147,6 +147,7 @@ When the application loads you are set on the welcome screen. From here, you may
 
 ### Credit View
 <img width="228" alt="Screen Shot 2023-11-30 at 11 43 25 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/77206156-bb01-471e-8911-3c584640f668">
+
 1. View the contributors to the application.
 
 

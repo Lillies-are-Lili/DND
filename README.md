@@ -179,10 +179,10 @@ Depending on the size of the project, if it is small and simple enough the refer
         }
     }
 
- /**
-   * This method first checks if a dice was selected, and then if a proficiency toggle was checked. If both were, if the advantage spinner was set to advantage, if roll1 was         *bigger than roll2, display roll1. If disadvantage was chosen, then if roll1 is bigger then roll2, display roll2.
-   * 
-   */
+
+/**
+*This method first checks if a dice was selected, and then if a proficiency toggle was checked. If both were, if the advantage spinner was set to advantage, if roll1 was bigger than roll2, display roll1. If disadvantage was chosen, then if roll1 is bigger then roll2, display roll2.
+*/
 
           @Override
             public void onClick(View v) {
@@ -262,7 +262,7 @@ Depending on the size of the project, if it is small and simple enough the refer
 
 
 /**
-* This method goes through each of the buttons on the Notes view. If the user clicks pull, and pull is empty, it returns a toast that there are no files saved. If there are files * that are saved, then to return the contents of the note. If the user clicks push, then the method will save the title and body of the note into an ArrayAdapter object. If the user clicks SMITE, then the method will delete the specified note. 
+* This method goes through each of the buttons on the Notes view. If the user clicks pull, and pull is empty, it returns a toast that there are no files saved. If there are files that are saved, then to return the contents of the note. If the user clicks push, then the method will save the title and body of the note into an ArrayAdapter object. If the user clicks SMITE, then the method will delete the specified note. 
 */
 
          public void onClick(View view) {

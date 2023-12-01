@@ -10,6 +10,7 @@
     tools:context=".CreditActivity">
 
     <TextView
+        android:id="@+id/credit_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -22,6 +23,7 @@
         android:layout_height="20sp" />
 
     <TextView
+        android:id="@+id/Lil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -29,6 +31,7 @@
         android:textColor="#DF0000"
         android:text="Lillian Ngohuynh" />
     <TextView
+        android:id="@+id/Lil_Credit"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -41,6 +44,7 @@
         android:layout_height="5sp" />
 
     <TextView
+        android:id="@+id/Min"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -48,6 +52,7 @@
         android:textColor="#DF0000"
         android:text="Minato Allen" />
     <TextView
+        android:id="@+id/Min_Credit"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -60,6 +65,7 @@
         android:layout_height="5sp" />
 
     <TextView
+        android:id="@+id/Alfonso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -67,6 +73,7 @@
         android:textColor="#DF0000"
         android:text="Alfonso Lopez Aquino" />
     <TextView
+        android:id="@+id/Alfonso_Credit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -80,6 +87,7 @@
         android:layout_height="5sp" />
 
     <TextView
+        android:id="@+id/Mack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -87,6 +95,7 @@
         android:textColor="#DF0000"
         android:text="Mack Tully" />
     <TextView
+        android:id="@+id/Mack_Credit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"

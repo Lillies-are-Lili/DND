@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,6 +10,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/welcome"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
         android:padding="5dp"
@@ -19,12 +19,14 @@
       android:text="Welcome to the " />
 
     <ImageView
+        android:id="@+id/DND_logo"
         android:layout_width="250dp"
         android:layout_height="150sp"
         tools:ignore="ContentDescription"
         android:src="@drawable/ddlogo"/>
 
     <TextView
+        android:id="@+id/name_gen_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -49,6 +51,7 @@
             android:textSize="30sp" />
 
         <ImageView
+            android:id="@+id/dnd_Woman"
             android:layout_width="130sp"
             android:layout_height="200sp"
             android:layout_marginTop="60sp"
@@ -56,6 +59,7 @@
             android:src="@drawable/dndwoman" />
 
         <ImageView
+            android:id="@+id/dnd_man"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:src="@drawable/dndman"

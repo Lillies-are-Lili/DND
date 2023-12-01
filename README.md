@@ -4,9 +4,6 @@
 
 Embark on a journey into a world of endless possibilities with DND Name Generator, the ultimate Dungeons & Dragons character generation! Unleash your creativity and bring your characters to life with a tool that goes beyond mundane names. Elevate your gaming experience with our unique dice roll feature, allowing you to pick a specific number-sided die and even add proficiency, advantage or disadvantage, for an extra layer of spontaneity. Dive into a rich tapestry of fantasy realms as you effortlessly generate unique and immersive names for races, backgrounds, creatures, and more. One can also notate and keep all of their characters that they generate. Reveal the power of words and forge a connection between your players and the fantastical realms they inhabit. DND Name Generator is not just a name generator; it's a key to unlocking the immersive potential of your Dungeons & Dragons adventures. Elevate your storytelling and embark on a quest of boundless creativity today!
 
-## A look into our application! 
-<img width="205" alt="Screen Shot 2023-11-30 at 8 35 06 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/c15f80d3-4048-473f-b39d-b600e73a7588">
-
 
 ## Code Example
 
@@ -56,26 +53,100 @@ To gain access to the code, all one needs to do is visit this link provided here
 
 ## Instruction
 
+When the application loads you are set on the welcome screen. <img width="205" alt="Screen Shot 2023-11-30 at 8 35 06 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/c15f80d3-4048-473f-b39d-b600e73a7588">
+From here, you may choose what you want to do with the application. From generating a random character, to picking the proficiency and advantage levels that you may possess. To go back from a view back to the main page, you can just click the back button on the Android Virtual Device.
 
-When the application loads you are set on the welcome screen. From here, you may choose what you want to do with the application. From generating a random character, to picking the proficiency and advantage levels that you may possess. To go back from a view back to the main page, you can just click the back button on the Android Virtual Device.
+#### Click "Generate Name" to reach the Name View
+#### Click "Dice Roll" to reach the Dice View
+#### Click "Notes" to reach the Notes View
+#### Click "Credits" to reach the Credit View
+#### Click "Exit" to exit the application
+
 
 ### Name View
 <img width="203" alt="Screen Shot 2023-11-30 at 8 43 40 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/f1de4304-5b80-43dc-ae52-8d5d18753633">
-If you click on "Generate Name", it will take you to our Name View, in which you will be presented with three more buttons, a spinner (also known as a drop-down menu) and a TextView box that will print your randomly generated items. If you click "Generate Job!", a random job from our CSV file, containing more than 120 different jobs in the world of DND, will populate in the TextView box. If the job you were given is not to your liking, you can click the button again for another randomly generated job! The button right below is the "Generate Background!" button. Similar to the job button, clicking this button will populate a random background from our CSV files, and print on the TextView. The spinner below, when clicked, will present the user with a variety of different races that are present in DND. From elves to goliaths, you can choose whichever race you want your character to be! Then next button is the "Generate Character Name!" button. This will generate a random first name, and a random last name and concatenate them together. The race you chose from the spinner, will also populate with your given name. 
 
-### Dice View
-If you click the "Dice Roll" button, this will take you to the Dice View. From here, you are presented with three spinners, a toggle button, an EditText, a button, a TextView and a TableLayout. The first spinner called "Select Dice" at the very top, is the dice spinner. You are able to select whichever sided die you want. If you do not see a certain sided die that you want, there is an EditText to the bottom left, called "Custom Modifier" which allows you to input a number for the sided die you want. There is a "PROFICIENCY" toggle to the right of the Dice spinner, and you are able to pick between a proficient or not proficient level. To the other side is the "Select Level" spinner where you can specifiy what level you want your proficiency level to be at. Then, below the proficiency toggle is the Advantage spinner. Here, you're able to select whether you want an advantage or not when it came to the dice roll. Then, after each spinner and toggle is chosen, can the user click the "roll" button. This will roll the die and give you a randomly generated roll number, with the specifications applied to the die. You are also able to see the previous rolls in the TableLayout as well. The TextView will also display the result of the roll. 
+#### Click "Generate Name" to reach the Name View
+
+1. **Click "Generate Job!"**
+   - Will generate a random job in the TextView.
+
+2. **Click "Generate Background!"**
+   - Will generate a random background in the TextView.
+
+3. **Select Race**
+   - Tap the spinner to display a dropdown menu.
+   - Choose which race you want for your character (e.g., Elf, Goliath, Human).
+
+4. **Click "Generate Character Name!"**
+   - Will generate a random first and last name in the TextView, and populate the selected race of the character.
+   
+
+### Dice View ![image](https://github.com/Lillies-are-Lili/finalproject/assets/102399575/2046277e-cbef-4efa-b6ca-50d118d12e04)
+
+1. **Select Dice Type:**
+   - Find the "Dice Type" spinner at the top of the screen.
+   - Tap the spinner to display a dropdown menu.
+   - Choose the type of dice you want to roll (e.g., D4, D6, D20).
+ 
+2. **Set Proficiency (Optional):**
+   - Locate the "Proficiency Level" spinner.
+   - Tap to choose your proficiency level, if applicable to your roll.
+ 
+3. **Toggle Proficiency (Optional):**
+   - Next to the "Proficiency Level" spinner, you will find a "Proficiency" toggle button.
+   - Toggle this on if you want to apply your proficiency level to the roll.
+ 
+4. **Choose Roll Condition:**
+   - Find the "Advantage" spinner.
+   - Select either "Normal", "Advantage", or "Disadvantage" for your roll.
+ 
+5. **Enter a Custom Modifier (Optional):**
+   - Locate the "Custom Modifier" input box.
+   - Enter any numerical value to be added or subtracted from your roll.
+ 
+6. **Roll the Dice:**
+   - Tap the "Roll" button to perform the dice roll.
+   - The result will be displayed immediately on the screen under the "Result" section.
+  
+ #### Viewing Roll History
+- Each roll you make is automatically added to the history table.
+- Scroll down to view the last 12 rolls you have made.
+- The roll history is displayed in a table format for easy reference.
+ 
+#### Notes
+- Ensure your selections are complete before hitting the "Roll" button to get accurate results.
+- The history table only maintains the last 12 rolls. Older rolls will be removed as new ones are added.
+
 
 ### Notes View
 <img width="207" alt="Screen Shot 2023-11-30 at 11 12 49 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/d88609a7-f8c8-403c-b9cf-891abe044139">
-Then we have the "Notes" button, where you're presented with three buttons, two EditTexts, a Scrollview, and a Spinner. Here is where you will type in and save your notes for your characters, your dice, anything you like, for later use. There are two EditTexts, with hints informing the user where to put their data and what it will represent. For example, the Title EditView has a hint informing the user that this will be the title of the note. Then, below that is the body of the note, which is where the user will type in the rest of their note. The "Push" button saves the note to the Spinner at the top, which is where the notes and their titles will populate. The "Smite" button deletes a note that you had saved, and you can specify which note to delete by clicking the spinner at the top. The "Pull" button will pull a note that you specified from the spinner, and print the contents of the note in the ScrollView. 
+
+1. **Click EditText Title**
+   - Tap the EditText to add a title for your note.
+  
+2. **Click EditText Body**
+   - Tap the EditText to add the body of the note.
+
+3. **Select spinner**
+   - Tap the spinner to display a dropdown menu.
+   - Choose which note you want to smite or pull.
+
+4. **Click "SMITE"**
+   - Will Delete the selected note.
+
+5. **Click "Push"**
+   - Will save the note.
+   - Will delete current text in preparation for new note creation.
+
+6. **Click "Pull"**
+    - Will pull the selected note and print the contents to the screen.
+    - Allows editing of notes. 
 
 ### Credit View
 <img width="228" alt="Screen Shot 2023-11-30 at 11 43 25 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/77206156-bb01-471e-8911-3c584640f668">
-This is a simple view with TextViews that display the authors of this application. 
 
-### Exit Button
-Clicking this button exits the application. 
+1. View the contributors to the application.
 
 
 ## API Reference
@@ -313,7 +384,7 @@ We will have all of our updates for the project on this Github repository, which
 
 MIT License
 
-Copyright (c) [2023] [Lillian Ngohuynh] [Minato Allen] [Mackenzie Tully] [Alfonso Lopez Aquino]
+Copyright (c) [2023] [Team 10] 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

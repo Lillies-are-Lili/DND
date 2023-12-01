@@ -4,6 +4,10 @@
 
 Embark on a journey into a world of endless possibilities with DND Name Generator, the ultimate Dungeons & Dragons character generation! Unleash your creativity and bring your characters to life with a tool that goes beyond mundane names. Elevate your gaming experience with our unique dice roll feature, allowing you to pick a specific number-sided die and even add proficiency, advantage or disadvantage, for an extra layer of spontaneity. Dive into a rich tapestry of fantasy realms as you effortlessly generate unique and immersive names for races, backgrounds, creatures, and more. One can also notate and keep all of their characters that they generate. Reveal the power of words and forge a connection between your players and the fantastical realms they inhabit. DND Name Generator is not just a name generator; it's a key to unlocking the immersive potential of your Dungeons & Dragons adventures. Elevate your storytelling and embark on a quest of boundless creativity today!
 
+## A look into our application! 
+<img width="205" alt="Screen Shot 2023-11-30 at 8 35 06 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/c15f80d3-4048-473f-b39d-b600e73a7588">
+
+
 ## Code Example
 
 For example, we have added CSV files detailing the various characteristics to our assets folder, and have methods that read in the files and randomly generate a characteristic for your character.

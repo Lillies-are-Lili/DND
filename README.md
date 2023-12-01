@@ -4,9 +4,6 @@
 
 Embark on a journey into a world of endless possibilities with DND Name Generator, the ultimate Dungeons & Dragons character generation! Unleash your creativity and bring your characters to life with a tool that goes beyond mundane names. Elevate your gaming experience with our unique dice roll feature, allowing you to pick a specific number-sided die and even add proficiency, advantage or disadvantage, for an extra layer of spontaneity. Dive into a rich tapestry of fantasy realms as you effortlessly generate unique and immersive names for races, backgrounds, creatures, and more. One can also notate and keep all of their characters that they generate. Reveal the power of words and forge a connection between your players and the fantastical realms they inhabit. DND Name Generator is not just a name generator; it's a key to unlocking the immersive potential of your Dungeons & Dragons adventures. Elevate your storytelling and embark on a quest of boundless creativity today!
 
-## A look into our application! 
-<img width="205" alt="Screen Shot 2023-11-30 at 8 35 06 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/c15f80d3-4048-473f-b39d-b600e73a7588">
-
 
 ## Code Example
 
@@ -56,7 +53,8 @@ To gain access to the code, all one needs to do is visit this link provided here
 
 ## Instruction
 
-When the application loads you are set on the welcome screen. From here, you may choose what you want to do with the application. From generating a random character, to picking the proficiency and advantage levels that you may possess. To go back from a view back to the main page, you can just click the back button on the Android Virtual Device.
+When the application loads you are set on the welcome screen. <img width="205" alt="Screen Shot 2023-11-30 at 8 35 06 PM" src="https://github.com/Lillies-are-Lili/finalproject/assets/102399575/c15f80d3-4048-473f-b39d-b600e73a7588">
+From here, you may choose what you want to do with the application. From generating a random character, to picking the proficiency and advantage levels that you may possess. To go back from a view back to the main page, you can just click the back button on the Android Virtual Device.
 
 #### Click "Generate Name" to reach the Name View
 #### Click "Dice Roll" to reach the Dice View
@@ -386,7 +384,7 @@ We will have all of our updates for the project on this Github repository, which
 
 MIT License
 
-Copyright (c) [2023] [Lillian Ngohuynh] [Minato Allen] [Mackenzie Tully] [Alfonso Lopez Aquino]
+Copyright (c) [2023] [Team 10] 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

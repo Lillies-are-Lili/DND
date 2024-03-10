@@ -1,4 +1,4 @@
-# finalproject
+# DND Name Generator
 
 ## Synopsis
 
